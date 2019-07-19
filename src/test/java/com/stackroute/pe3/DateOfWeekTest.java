@@ -26,13 +26,13 @@ public class DateOfWeekTest {
         dateOfWeek=null;
     }
     @Test
-    public void givenStartAndEndDateShouldReturnAStringMessage()
+    public void givenStartAndEndDateShouldReturnAString()
     {
 //        act
-        String actualresult= dateOfWeek.calculateDate();
-        String expectedresult= ("Mon 14/07/2019 Sun 21/07/2019");
+        String[] actualresult= dateOfWeek.calculateDate();
+        String[] expectedresult= {"Mon 14/07/2019 Sun 21/07/2019"};
 //        assert
-        assertEquals(expectedresult,actualresult);
+        assertArrayEquals(expectedresult,actualresult);
     }
 }
 
