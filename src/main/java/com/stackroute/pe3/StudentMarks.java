@@ -5,9 +5,9 @@ public class StudentMarks {
     {
         for(int i=0; i<studentGrades.length; i++)
         {
-            if (studentGrades[i]<0)
+            if (studentGrades[i]<0 | studentGrades[i]>100)
             {
-                return ("Grades can not be negative");
+                return ("Grades should be in range of 0-100");
             }
         }
         if(noOfStudents>0) {

@@ -51,14 +51,14 @@ public class StudentMarksTest {
     }
 
     @Test
-    public void givenNegativeInputGradeShouldReturnAStringMessage()
+    public void givenInputGradesShouldReturnAStringMessage()
     {
 //    act
         int noOfStudents=5;
-        int [] grades={87, -90, 59, -70, 65};
+        int [] grades={87, -90, 59, -70, 165};
         String actualresult= this.studentMarks.detailsOfStudents(noOfStudents, grades);
 //    assert
-        assertEquals("Grades can not be negative", actualresult);
+        assertEquals("Grades should be in range of 0-100", actualresult);
     }
     @Test
     public void givenNegativeNoOfStudentsShouldReturnAStringMessage()
