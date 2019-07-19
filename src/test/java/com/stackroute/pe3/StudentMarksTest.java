@@ -27,19 +27,47 @@ public class StudentMarksTest {
     studentMarks=null;
 }
 
+
 @Test
-    public void givenInputShouldReturnAnInteger()
+    public void givenInputShouldReturnAString()
 {
 //    act
-    int actualresult= this.studentMarks.detailsOfStudents(3);
-//    assert
-    assertEquals(3, actualresult);
-}
-@Test
-    public void givenInputShouldReturnAIntArray()
-{
-//    act
+    int noOfStudents= 3;
     int [] grades={87, 90, 65};
-    int [] actualresult= this.studentMarks.detailsOfStudents(grades);
+    String actualresult= this.studentMarks.detailsOfStudents(noOfStudents, grades);
+//    assert
+    assertEquals("students grades saved", actualresult);
 }
+
+    @Test
+    public void givenInputShouldReturnAnErrorMessage()
+    {
+//    act
+        int [] grades={87, 90, 59, 70, 65};
+        int noOfStudents=3;
+        String actualresult= this.studentMarks.detailsOfStudents(noOfStudents, grades);
+//    assert
+        assertEquals("invalid input", actualresult);
+    }
+
+    @Test
+    public void givenNegativeInputGradeShouldReturnAStringMessage()
+    {
+//    act
+        int noOfStudents=5;
+        int [] grades={87, -90, 59, -70, 65};
+        String actualresult= this.studentMarks.detailsOfStudents(noOfStudents, grades);
+//    assert
+        assertEquals("Grades can not be negative", actualresult);
+    }
+    @Test
+    public void givenNegativeNoOfStudentsShouldReturnAStringMessage()
+    {
+//    act
+        int noOfStudents=-7;
+        int [] grades={87, 90, 59, 70, 65};
+        String actualresult= this.studentMarks.detailsOfStudents(noOfStudents, grades);
+//    assert
+        assertEquals("Number Of students can not be negative", actualresult);
+    }
 }
