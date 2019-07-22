@@ -21,5 +21,4 @@ public class DateOfWeek {
         String[] result= {date1, date2};
         return result;
     }
-
 }

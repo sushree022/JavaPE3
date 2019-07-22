@@ -9,3 +9,6 @@ Description- There are 11 problems for which test cases are written and then log
 
 2. AdditionOfMatrix-
 		This takes input for number of rows and coloums and input for each coloumn and row. Then it adds both the matrices and gives 			the result.
+
+3. ChessBoard- 
+		This takes number of rows as input and returns chess board pattern.
