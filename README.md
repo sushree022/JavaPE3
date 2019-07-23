@@ -24,5 +24,4 @@ Description- There are 11 problems for which test cases are written and then log
 
 7. Exception-
 		An object of class exception is thrown inside a try block and is caught in catch clause.
-8. MultipleException- 
-		exceptions​ of type NegativeArraySizeException, IndexOutOfBoundsException and NullPointerException.
+
