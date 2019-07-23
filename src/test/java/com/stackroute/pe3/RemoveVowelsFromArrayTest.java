@@ -41,7 +41,7 @@ public class RemoveVowelsFromArrayTest {
 //      act
         String[] names= {"India","Japan"};
         String [] actualresult= removeVowelsFromArray.vowelRemove(names);
-        String[] expectedresult= {"nd","jpn"};
+        String[] expectedresult= {"nd","Jpn"};
 //        assert
         assertArrayEquals(expectedresult,actualresult);
     }

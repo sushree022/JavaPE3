@@ -16,3 +16,6 @@ Description- There are 11 problems for which test cases are written and then log
 4. DateOfWeek-
 
 		First and last date of current week is calculated.
+
+5. RemoveVowelsFromArray-
+		From a list of array of strings, vowels are removed and array of strings without vowels is returned.
