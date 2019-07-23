@@ -12,3 +12,7 @@ Description- There are 11 problems for which test cases are written and then log
 
 3. ChessBoard- 
 		This takes number of rows as input and returns chess board pattern.
+
+4. DateOfWeek-
+
+		First and last date of current week is calculated.
