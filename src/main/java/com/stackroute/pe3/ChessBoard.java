@@ -1,8 +1,9 @@
 package com.stackroute.pe3;
+// To create chessboard pattern with given number of rows and columns
 
 public class ChessBoard {
     public
-
+// Declaration of variables
     String[][] matrix;
     int rows, columns;
 
@@ -12,7 +13,7 @@ public class ChessBoard {
         matrix = new String[rows][columns];
 
     }
-
+// Logic to create pattern of BB and WW
     public String chessBoardPattern() {
         int k = 0;
         String result = "";
